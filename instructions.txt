@@ -1,0 +1,18 @@
+PHRASEE BACK END TECHNICAL TEST
+ 
+You are tasked with writing the algorithm that takes a feed of notifications and aggregates them. The algorithm should be packaged in a web server that exposes three endpoints:
+- The first endpoint will provide the functionality to retrieve an aggregated list of notifications for a given post. We are looking for a response that is as close to production ready as possible.
+- The second endpoint will expose a POST method that will add an element to this feed of notifications.
+- The third and last endpoint should expose the functionality to mark these feeds as read.
+ 
+The notification feed is from a hypothetical social website that allows users to write posts, like posts and comment on posts. 
+The notifications can be of two types: Like and Comment. 
+Like indicates that one user liked a user's post and Comment indicates that one user commented on a user's post.
+ 
+You'll be provided with a file containing a JSON of the notifications feed. 
+Use your judgement for a suitable aggregation bearing in mind this will be displayed on a web UI. 
+Please note that the order in which the notifications are served or aggregated is irrelevant.
+
+Please do not take more than approximately 4 HOURS on this test. 
+If you find you cannot complete it to your satisfaction, please write down how you would intend to finish, we will take that into account.
+The test results should be packaged either as a .zip file or as a link to a git repository.

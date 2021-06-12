@@ -1,0 +1,181 @@
+{
+	"variables": [],
+	"info": {
+		"name": "notifications",
+		"_postman_id": "6bbef0f3-2362-9319-29d7-34f8e1018070",
+		"description": "Aggrigating notifications",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getPostAggrigate",
+			"request": {
+				"url": {
+					"raw": "https://phraseebackend.azurewebsites.net/api/notification/7d78ff348647b782cb3027d836d23e09/aggregates?code=eTzAUopkiBEO152ClVO9T4ksFYbdl7678m2fN8TCqJFX79HUN1Nx3w%3D%3D",
+					"protocol": "https",
+					"host": [
+						"phraseebackend",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"notification",
+						"7d78ff348647b782cb3027d836d23e09",
+						"aggregates"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "eTzAUopkiBEO152ClVO9T4ksFYbdl7678m2fN8TCqJFX79HUN1Nx3w%3D%3D",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Returns a specific post with all notifications"
+			},
+			"response": []
+		},
+		{
+			"name": "getPostAggrigate local",
+			"request": {
+				"url": "http://localhost:7071/api/notification/7d78ff348647b782cb3027d836d23e09/aggregates",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Returns a specific post with all notifications"
+			},
+			"response": []
+		},
+		{
+			"name": "newNotification local",
+			"request": {
+				"url": "http://localhost:7071/api/notification/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"type\": \"Comment\",\n\t\"postId\": \"57e0d6328c9287bd1b66bc327efbcdfa\",\n\t\"commentText\": \"Some new comment\"\n}"
+				},
+				"description": "Returns a specific post with all notifications"
+			},
+			"response": []
+		},
+		{
+			"name": "newNotification",
+			"request": {
+				"url": {
+					"raw": "https://phraseebackend.azurewebsites.net/api/notification/?code=aBTPVlcz1BzB6IBYZL4jT1FF3gcYCZJRfz1gzt7wIbtA41cJcVRalA%3D%3D",
+					"protocol": "https",
+					"host": [
+						"phraseebackend",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"notification",
+						""
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "aBTPVlcz1BzB6IBYZL4jT1FF3gcYCZJRfz1gzt7wIbtA41cJcVRalA%3D%3D",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"type\": \"Comment\",\n\t\"postId\": \"57e0d6328c9287bd1b66bc327efbcdfa\",\n\t\"commentText\": \"Some new comment\"\n}"
+				},
+				"description": "Returns a specific post with all notifications"
+			},
+			"response": []
+		},
+		{
+			"name": "patchReadPost local",
+			"request": {
+				"url": "http://localhost:7071/api/notification/57e0d6328c9287bd1b66bc327efbcdfa/read",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Returns a specific post with all notifications"
+			},
+			"response": []
+		},
+		{
+			"name": "patchReadPost",
+			"request": {
+				"url": {
+					"raw": "https://phraseebackend.azurewebsites.net/api/notification/57e0d6328c9287bd1b66bc327efbcdfa/read?code=tpH8HIvEMYCkkIyER22fXmdonQaBr%2FnIertHSOcT1Kay8sBcWVtccQ%3D%3D",
+					"protocol": "https",
+					"host": [
+						"phraseebackend",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"notification",
+						"57e0d6328c9287bd1b66bc327efbcdfa",
+						"read"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "tpH8HIvEMYCkkIyER22fXmdonQaBr%2FnIertHSOcT1Kay8sBcWVtccQ%3D%3D",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Returns a specific post with all notifications"
+			},
+			"response": []
+		}
+	]
+}
